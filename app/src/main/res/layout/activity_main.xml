@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0d0d0d"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="358dp"
+            android:layout_height="343dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/nameSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:text="My Song"
+            android:textAlignment="center"
+            android:textColor="#0d0d0d"
+            android:textSize="24sp" />
+
+        <SeekBar
+            android:id="@+id/lenSong"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/nameSong"
+            android:theme="@style/SeekBarColor"
+            android:layout_marginTop="40dp"
+            android:background="#217dad" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lenSong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/prev"
+                android:layout_width="65dp"
+                android:rotation="180"
+                android:layout_height="65dp"
+                android:background="@drawable/circle"
+                app:srcCompat="@drawable/ic_baseline_skip_next_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/circle"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/ic_baseline_skip_next_24"
+                android:background="@drawable/circle"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
