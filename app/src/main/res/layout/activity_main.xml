@@ -56,6 +56,7 @@
                 android:id="@+id/prev"
                 android:layout_width="65dp"
                 android:rotation="180"
+                android:onClick="prev"
                 android:layout_height="65dp"
                 android:background="@drawable/circle"
                 app:srcCompat="@drawable/ic_baseline_skip_next_24"
@@ -65,16 +66,17 @@
                 android:id="@+id/play"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
+                android:onClick="play"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/circle"
-                app:srcCompat="@drawable/ic_baseline_play_arrow_24"
-                tools:ignore="VectorDrawableCompat" />
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
 
             <ImageView
                 android:id="@+id/next"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="20dp"
+                android:onClick="next"
                 app:srcCompat="@drawable/ic_baseline_skip_next_24"
                 android:background="@drawable/circle"
                 tools:ignore="VectorDrawableCompat" />
